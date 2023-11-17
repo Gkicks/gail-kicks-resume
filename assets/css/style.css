@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-/* colours */
+/*--------------------------------------------Colors*/
+
 .bg-color-name-title {
     background-color: #676767;
 }
@@ -13,13 +14,24 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-skills {
+    background-color: #ffffff;
+}
+
 .bg-color-work-history {
     background-color: #9b59b6;
 }
 
 .bg-color-contact {
     background-color: #ffffff;
+}
 
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
+    background-color: #ffffff;
 }
 
 .ui-menu-color-home {
@@ -35,10 +47,31 @@
 }
 
 .ui-menu-color-download {
-    background-color: #525252;
+    background-color: #d9a81d;
 }
 
-/* special paddings/margins/texts */
+
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
+
+
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    background-color: #525252;
+    color: #555555;
+}
+
+
+/*--------------------------------------------Special Paddings/Margins/Text*/
+
 h1,
 h2,
 h3,
@@ -60,25 +93,22 @@ h4 {
     display: inline-block;
 }
 
+
 .row-table {
     display: table;
-}
-
-.section-column {
-    display: table-cell;
-    padding: 0 30px 30px;
-    float: none;
 }
 
 .history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 40px;
 }
 
-/* heading */
+
+/*--------------------------------------------Heading*/
+
 header {
     margin: 0;
 }
@@ -93,9 +123,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
 .name {
@@ -115,20 +145,11 @@ header {
     color: #ffffff;
 }
 
-.list-inline-item:not(:last-child) {
-    margin: 0;
-}
-
-.menucontainer {
-    font-size: 0;
-}
-
 #nav {
     margin: 0;
 }
 
 #nav li {
-    font-size: 14px;
     padding: 0;
 }
 
@@ -144,6 +165,7 @@ header {
     color: #ffffff;
     height: 120px;
 }
+
 
 .menuitem a i {
     padding-top: 22px;
@@ -163,34 +185,37 @@ header {
     letter-spacing: 2px;
 }
 
-/* hover.css */
+
+/*--------------------------------------------Hover.css*/
+
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
-/* footer */
+
+/*--------------------------------------------Footer*/
+
 footer {
     background-color: #525252;
     color: #fafafa;
     min-height: 120px;
     margin: 0;
-
 }
 
-.cv-pdf i {
-    font-size: 18px;
+footer .cv-pdf i {
     color: #fafafa;
     text-align: center;
+    font-size: 18px;
     padding-left: 5px;
+}
+
+footer .cv-pdf i:hover {
+    color: #e84610;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-}
-
-.cv-pdf i:hover {
-    color: #e84610;
 }
 
 .social-links {
@@ -201,7 +226,7 @@ footer {
     width: 32px;
     height: 32px;
     padding: 12px 0;
-    border-radius: 50px;
+    border-radius: 50%;
     font-size: 13px;
     line-height: 7px;
     text-align: center;
@@ -218,10 +243,11 @@ footer {
 }
 
 #footer-details {
-    padding: 20px;
+    margin: 20px;
 }
 
-/* three reasons */
+/*--------------------------------------------Three Reasons*/
+
 .three-reasons-icon {
     font-size: 26px;
     color: #e67e22;
@@ -231,7 +257,8 @@ footer {
     margin-bottom: 15px;
 }
 
-/* personal info */
+/*--------------------------------------------Personal Info*/
+
 .personal-info-item {
     margin-bottom: 20px;
     display: block;
@@ -241,7 +268,6 @@ footer {
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
-    display: inline-block;
 }
 
 .personal-info-item .key p,
@@ -250,6 +276,7 @@ footer {
 }
 
 .personal-info-item .key {
+    display: inline-block;
     width: 30%;
     margin-right: 21px;
     padding-top: 2px;
@@ -261,15 +288,16 @@ footer {
 }
 
 .personal-info-item .value {
+    display: inline-block;
     position: relative;
     width: 60%;
 }
 
-/* skills */
+/*--------------------------------------------Skills*/
+
 .progress {
     position: relative;
     height: 25px;
-    margin-bottom: 4px;
 }
 
 .progress-type {
@@ -281,16 +309,13 @@ footer {
     background-color: rgba(25, 25, 25, 0.2);
 }
 
+
 .progress-section {
     margin: 40px 20px;
 }
 
 
-/* work history */
-.history-heading {
-    color: #fafafa;
-    margin-bottom: 50px;
-}
+/*--------------------------------------------Work History*/
 
 .timeline-item {
     padding: 4em 2em 0em 2em;
@@ -312,7 +337,7 @@ footer {
     display: block;
     font-family: "Exo", sans-serif;
     font-weight: 500;
-    font-size: 0.8em;
+    font-size: .8em;
     padding: 0;
     margin: 0;
 }
@@ -326,20 +351,27 @@ footer {
     left: -6px;
     border-radius: 12px;
     content: '';
-    background-color: #fafafa;
+    background: #fafafa;
+}
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
 }
 
 .history-items {
     margin-bottom: 30px;
 }
 
-/* contact form */
+/*--------------------------------------------Contact*/
+
 .contact-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 20px;
 }
+
 
 .center-form {
     padding-top: 10px;
@@ -350,12 +382,24 @@ footer {
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    color: #fafafa;
     background-color: #e84610;
+    color: #fafafa;
 }
 
-/* media queries */
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
+}
+
+/*--------------------------------------------Media Queries*/
+
 @media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
     .center-form {
         padding-top: 30px;
         min-height: 240px;
